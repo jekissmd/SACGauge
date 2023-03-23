@@ -49,7 +49,7 @@ var getScriptPromisify = (src) => {
                 smooth: true
               }
             ]
-          };
+          }
         chart.setOption(option)
       }
     }
