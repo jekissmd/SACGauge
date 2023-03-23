@@ -36,28 +36,28 @@ var getScriptPromisify = (src) => {
         const chart = echarts.init(this._root)
         const option = {
             tooltip: {
-              formatter: '{a} <br/>{b} : {c}%'
-            },
-            series: [
-              {
-                name: 'Pressure',
-                type: 'gauge',
-                progress: {
-                  show: true
-                },
-                detail: {
-                  valueAnimation: true,
-                  formatter: '{value}'
-                },
-                data: [
-                  {
-                    value: 50,
-                    name: 'SCORE'
-                  }
-                ]
-              }
-            ]
-          };
+                formatter: '{a} <br/>{b} : {c}%'
+              },
+              series: [
+                {
+                  name: 'Pressure',
+                  type: 'gauge',
+                  progress: {
+                    show: true
+                  },
+                  detail: {
+                    valueAnimation: true,
+                    formatter: '{value}'
+                  },
+                  data: [
+                    {
+                      value: 50,
+                      name: 'SCORE'
+                    }
+                  ]
+                }
+              ]
+        }
         chart.setOption(option)
       }
     }
