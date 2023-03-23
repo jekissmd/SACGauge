@@ -57,7 +57,7 @@ var getScriptPromisify = (src) => {
                   ]
                 }
               ]
-        }
+        };
         chart.setOption(option)
       }
     }
